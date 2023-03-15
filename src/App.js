@@ -8,15 +8,17 @@ import Product from "./pages/Product";
 function App() {
   return (
     <>
-      <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/company" element={<Company />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/Product" element={<Product />} />
-        </Routes>
-      </Router>
+      <div>
+        <Router>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/company" element={<Company />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/Product" element={<Product />} />
+          </Routes>
+        </Router>
+      </div>
     </>
   );
 }
